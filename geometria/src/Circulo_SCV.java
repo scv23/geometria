@@ -7,6 +7,9 @@ public class Circulo_SCV extends FiguraGeometrica_SCV {
 	public Circulo_SCV(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if (radio<0) {
+			Math.abs(radio);
+		}
 	}
 
 	@Override
